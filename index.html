@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oninput</title>
+</head>
+<body>
+     Write something here:<br>
+    <input type="text" id="text" oninput="myFunction()">
+    <p id="text2"></p>
+
+    <script>
+        function myFunction(){
+            let x=document.getElementById('text').value;
+            document.getElementById('text2').innerHTML = 'You wrote:'+x;
+        }
+    </script>
+    
+</body>
+</html>
